@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f14" />
+    <meta name="description" content="Public headlines from The Hindu, refreshed automatically." />
+    <title>The Hindu · Headlines</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <h1>The Hindu</h1>
+          <p class="subtitle">Headlines · public edition</p>
+        </div>
+        <button id="refresh" class="ghost" type="button">Refresh</button>
+      </header>
+
+      <section class="card notice">
+        <p class="notice-title">Static GitHub Pages edition</p>
+        <p class="meta">
+          Headlines refresh automatically every 15 minutes. Background push alerts need the notification app.
+        </p>
+        <p id="meta" class="meta"></p>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <h2>Categories</h2>
+          <span id="category-note" class="meta"></span>
+        </div>
+        <div id="categories" class="categories"></div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Latest</h2>
+          <span id="count" class="count"></span>
+        </div>
+        <div id="list" class="list"></div>
+        <button id="more" class="ghost more" type="button" hidden>Show more</button>
+      </section>
+
+      <footer class="footer">
+        Source:
+        <a href="https://www.thehindu.com/" target="_blank" rel="noopener noreferrer">The Hindu</a>
+        RSS feeds.
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
