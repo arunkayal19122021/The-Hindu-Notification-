@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f14" />
+    <meta name="description" content="Breaking news alerts from The Hindu." />
+    <title>The Hindu Alerts</title>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <h1>The Hindu</h1>
+          <p class="subtitle">Breaking news alerts</p>
+        </div>
+        <button id="refresh" class="ghost" type="button">Refresh</button>
+      </header>
+
+      <section class="card">
+        <label class="toggle" for="notify-toggle">
+          <input id="notify-toggle" type="checkbox" />
+          <span>Receive notifications</span>
+        </label>
+        <div class="row between">
+          <span id="status" class="status" role="status"></span>
+          <button id="test" class="ghost" type="button">Test</button>
+        </div>
+        <p id="meta" class="meta"></p>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <h2>Categories</h2>
+          <span id="category-note" class="meta"></span>
+        </div>
+        <div id="categories" class="categories"></div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Latest</h2>
+          <span id="count" class="count"></span>
+        </div>
+        <div id="list" class="list"></div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
